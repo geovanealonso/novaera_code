@@ -301,6 +301,7 @@ main img {
 
 /* Media queries para telas maiores */
 @media (min-width: 768px) {
+
     .sobre-section {
         flex-direction: row; /* Muda para duas colunas */
         justify-content: space-between;
@@ -317,6 +318,13 @@ main img {
 }
 
 
+@media (min-width: 1025px) {
+    .sobre-section {
+        padding: 40px; /* Ajuste de padding */
+    }
 
-
-
+    .sobre-image {
+        width: 50%; /* Define uma largura específica */
+        margin-right: 20px; /* Espaço à direita da imagem */
+    }
+}
