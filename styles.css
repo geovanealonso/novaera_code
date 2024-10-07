@@ -1,0 +1,322 @@
+/* GERAL */
+
+:root {
+    --primary-color: #7D4F6B;
+    --secondary-color: #52424C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 60px; /* Altura fixa do header */
+    padding: 0 20px; /* Espaçamento lateral */
+}
+
+.nova-era-header {
+    color: #FFF;
+    font-family: "Great Vibes";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.nova-era-text {
+    color: #FFF;
+    font-family: "Great Vibes";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 10px;
+}
+
+
+/*MAIN*/
+/*hero*/
+
+main img {
+    opacity: 70%;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    max-height: 400px; /* ajuste conforme a altura que preferir */
+    text-align: center; /* Centers the content horizontally - including the button!!*/
+    overflow: hidden;
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255); /* Altere conforme o contraste necessário */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo semitransparente para maior contraste */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-text h1{
+    font-family: "Exo 2";
+}
+
+/*button*/
+.button-container {
+    text-align: center; /* Centraliza o conteúdo dentro do contêiner */
+    margin-top: 20px; /* Espaço acima do contêiner do botão */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+
+.inscreva-se-button {
+    display: block;
+    width: 198px;
+    height: 83px;
+    padding: 12px 20px;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: var(--primary-color);
+    box-shadow: 6px 6px 8px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    position: relative;
+    cursor: pointer;
+}
+
+.inscreva-se-button:hover {
+    background-color: var(--secondary-color); /* Efeito hover */
+}
+
+/* Estilo base para mobile - uma coluna */
+.sobre-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.sobre-text, .sobre-image {
+    width: 100%; /* Para ocupar toda a largura disponível */
+    margin-bottom: 20px;
+}
+
+.sobre-text {
+    margin-top: 20px; /* Espaçamento acima do texto */
+    padding: 10px;
+    background-color: white; /* Se necessário */
+    position: relative; /* Garante que o texto não sobreponha o botão */
+    z-index: 1;
+}
+
+.sobre-text h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.sobre-text p {
+    text-align: justify;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.sobre-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px; /* Espaçamento acima */
+}
+
+.social-media-links-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social-media-links {
+    margin: 10px 0; /* Espaçamento vertical entre os ícones */
+    font-size: 60px; /* Tamanho dos ícones */
+    color: #834c65; /* Cor dos ícones */
+    text-decoration: none; /* Remove sublinhado */
+    transition: transform 0.3s ease, color 0.3s ease; /* Animação para hover */
+}
+
+.social-media-links:hover {
+    transform: scale(1.3); /* Aumenta o tamanho no hover */
+    color: #a5617b; /* Muda a cor ao passar o mouse */
+}
+
+.social-media-links i {
+    margin: 10px 10px;
+}
+
+.sobre-image img {
+    width: 80%;
+    height: auto; /* Responsivo */
+}
+
+/*SESSÃO DE "QUAL SUA PREFERÊNCIA*/
+.preferencias-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.preferencias-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.preferencia {
+    margin-bottom: 20px; /* Espaçamento entre seções */
+    padding: 15px;
+    border: 1px solid #834c65; /* Borda para destacar cada seção */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #f7f7f7; /* Cor de fundo leve */
+}
+
+.preferencia-image {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+}
+
+.preferencia h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.preferencia p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.preferencia ul {
+    list-style-type: none; /* Remove marcadores de lista */
+    padding: 0; /* Remove espaçamento interno */
+    margin-bottom: 10px;
+}
+
+.preferencia li {
+    font-size: 16px;
+}
+
+/*Seção de contato */
+.contato-section {
+    padding: 20px;
+}
+
+.contato-section h2 {
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+
+.map-container {
+    margin-bottom: 20px; /* Espaço abaixo do mapa */
+    text-align: center; /* Centraliza o iframe */
+}
+
+.map-container iframe {
+    width: 100%; /* Faz o iframe ocupar toda a largura do contêiner */
+    height: 300px; /* Altura do mapa */
+    border: 0; /* Remove bordas */
+}
+
+.contato-info {
+    margin-top: 20px; /* Espaço acima da seção de contato */
+}
+
+.contato-info p {
+    font-weight: bold; /* Negrito para os títulos */
+    margin-top: 10px;
+}
+
+.contato-info ul {
+    padding-left: 20px; /* Indenta a lista */
+}
+
+.footer-section {
+    background-color: var(--primary-color); /* Cor de fundo do footer */
+    color: white; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+.footer-content {
+    max-width: 1200px; /* Limita a largura do conteúdo do footer */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.social-media-footer {
+    margin-top: 10px; /* Espaço acima dos ícones de redes sociais */
+}
+
+.social-media-footer a {
+    color: white; /* Cor dos ícones */
+    margin: 0 10px; /* Espaçamento entre os ícones */
+    font-size: 24px; /* Tamanho dos ícones */
+    transition: color 0.3s; /* Transição de cor ao passar o mouse */
+}
+
+.social-media-footer a:hover {
+    color: #FFC107; /* Cor dos ícones ao passar o mouse */
+}
+
+/* Media queries para telas maiores */
+@media (min-width: 768px) {
+    .sobre-section {
+        flex-direction: row; /* Muda para duas colunas */
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .sobre-text, .sobre-image {
+        width: 48%; /* Cada item ocupa metade da tela */
+    }
+
+    .sobre-text p {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
