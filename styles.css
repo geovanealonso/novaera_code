@@ -133,7 +133,6 @@ main img {
 
 .sobre-text, .sobre-image {
     width: 100%; /* Para ocupar toda a largura disponível */
-    margin-bottom: 20px;
 }
 
 .sobre-text {
@@ -161,13 +160,12 @@ main img {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 20px; /* Espaçamento acima */
 }
 
 .social-media-links-container {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
 }
 
 .social-media-links {
@@ -188,12 +186,17 @@ main img {
 }
 
 .sobre-image img {
-    width: 80%;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    /*width: 80%;
     height: auto; /* Responsivo */
 }
 
 /*SESSÃO DE "QUAL SUA PREFERÊNCIA*/
 .preferencias-section {
+    display: flex;
+    flex-direction: column; /* Mobile layout */
     padding: 20px;
     text-align: center;
 }
@@ -203,9 +206,13 @@ main img {
     margin-bottom: 20px;
 }
 
-.preferencia {
+.preferencia-item {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on mobile */
     margin-bottom: 20px; /* Espaçamento entre seções */
     padding: 15px;
+    align-items: center;
+    text-align: center;
     border: 1px solid #834c65; /* Borda para destacar cada seção */
     border-radius: 5px; /* Bordas arredondadas */
     background-color: #f7f7f7; /* Cor de fundo leve */
@@ -215,25 +222,30 @@ main img {
     width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
     height: auto; /* Mantém a proporção da imagem */
     margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+    max-width: 400px; 
 }
 
-.preferencia h3 {
+.preferencia-item h3 {
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-.preferencia p {
+.preferencia-item p {
     font-size: 16px;
     margin-bottom: 10px;
 }
 
-.preferencia ul {
+.preferencia-item h3, .preferencia-item p {
+    padding: 10px;
+}
+
+.preferencia-item ul {
     list-style-type: none; /* Remove marcadores de lista */
     padding: 0; /* Remove espaçamento interno */
     margin-bottom: 10px;
 }
 
-.preferencia li {
+.preferencia-item li {
     font-size: 16px;
 }
 
@@ -315,6 +327,12 @@ main img {
     .sobre-text p {
         font-size: 18px;
     }
+
+    .sobre-image img {
+        border: 3px solid #7D4F6B; /* Cor do traço ao redor da imagem */
+        border-radius: 10px; /* Cantos arredondados, ajuste conforme desejado */
+    }
+    
 }
 
 
