@@ -193,17 +193,16 @@ main img {
     height: auto; /* Responsivo */
 }
 
+
 /*SESSÃO DE "QUAL SUA PREFERÊNCIA*/
 .preferencias-section {
-    display: flex;
-    flex-direction: column; /* Mobile layout */
-    padding: 20px;
     text-align: center;
+    padding: 20px;
 }
 
 .preferencias-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 32px;
+    margin-bottom: 40px;
 }
 
 .preferencia-item {
@@ -218,35 +217,44 @@ main img {
     background-color: #f7f7f7; /* Cor de fundo leve */
 }
 
-.preferencia-image {
+.preferencia-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espaço entre imagem e texto */
+}
+
+.preferencia-content img {
     width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
     height: auto; /* Mantém a proporção da imagem */
     margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+    border-radius: 10px;
     max-width: 400px; 
 }
 
-.preferencia-item h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.preferencia-item p {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.preferencia-item h3, .preferencia-item p {
+/* Estilo para o texto */
+.preferencia-texto {
     padding: 10px;
 }
 
-.preferencia-item ul {
-    list-style-type: none; /* Remove marcadores de lista */
-    padding: 0; /* Remove espaçamento interno */
+.preferencia-texto p {
     margin-bottom: 10px;
 }
 
-.preferencia-item li {
-    font-size: 16px;
+.horarios {
+    font-size: 130%;
+    padding-top: 1cm;
+}
+
+/* Estilo para a lista de horários */
+.preferencia-texto ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+}
+
+.preferencia-texto ul li {
+    margin-bottom: 5px;
+    text-align: left; /* Deixa os horários alinhados à esquerda */
 }
 
 /*Seção de contato */
@@ -282,6 +290,7 @@ main img {
 
 .contato-info ul {
     padding-left: 20px; /* Indenta a lista */
+    list-style-type: none; /* Remove bullets */
 }
 
 .footer-section {
@@ -314,6 +323,7 @@ main img {
 /* Media queries para telas maiores */
 @media (min-width: 768px) {
 
+    /*Sobre*/
     .sobre-section {
         flex-direction: row; /* Muda para duas colunas */
         justify-content: space-between;
@@ -333,16 +343,34 @@ main img {
         border-radius: 10px; /* Cantos arredondados, ajuste conforme desejado */
     }
     
+    /*Preferencia*/
+    .preferencia-content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; /* Espaça o conteúdo de imagem e texto */
+        text-align: left; /* Textos à esquerda nas telas maiores */
+    }
+
+    .preferencia-content img {
+        width: 40%; /* Ajuste a largura da imagem em telas maiores */
+    }
+
+    .preferencia-texto {
+        width: 50%; /* Limita o texto */
+    }
 }
 
 
 @media (min-width: 1025px) {
+    /*Sobre*/
     .sobre-section {
         padding: 40px; /* Ajuste de padding */
+        margin-left: 70px;
     }
 
     .sobre-image {
         width: 50%; /* Define uma largura específica */
-        margin-right: 20px; /* Espaço à direita da imagem */
     }
+
+
 }
