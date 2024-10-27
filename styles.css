@@ -292,7 +292,6 @@ main img {
 .contato-info ul {
     padding-left: 20px; /* Indenta a lista */
     list-style-type: none; /* Remove bullets */
-    
 }
 
 .footer-section {
@@ -368,10 +367,6 @@ main img {
     .sobre-section {
         padding: 40px; /* Ajuste de padding */
         margin-left: 70px;
-    }
-
-    .sobre-text{
-        margin-right: 100px;
     }
 
     .sobre-image {
