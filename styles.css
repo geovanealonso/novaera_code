@@ -119,6 +119,7 @@ main img {
     cursor: pointer;
 }
 
+
 .inscreva-se-button:hover {
     background-color: var(--secondary-color); /* Efeito hover */
 }
