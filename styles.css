@@ -287,13 +287,26 @@ main img {
 .contato-info p {
     font-weight: bold; /* Negrito para os títulos */
     margin-top: 10px;
+    font-size: 2ch;
 }
+
 
 .contato-info ul {
     padding-left: 20px; /* Indenta a lista */
     list-style-type: none; /* Remove bullets */
 }
 
+.contato-info span {
+    font-weight: bold;
+}
+
+.contato-info a{
+    color: #3498db;
+}
+
+.contato-info a:hover {
+    color: var(--primary-color);
+  }
 .footer-section {
     background-color: var(--primary-color); /* Cor de fundo do footer */
     color: white; /* Cor do texto */
